@@ -1,7 +1,7 @@
 export const products = [{
     id: 0,
     titulo: "Top Nike",
-    src: '../assets/img/top.png',
+    src: '../../../public/img/top.png',
     descripcion: "Top de color rosa intenso de licra especial para hacer running",
     usuario: "mujer",
     precio: 3500,

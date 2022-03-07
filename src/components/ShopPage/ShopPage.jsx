@@ -1,8 +1,15 @@
+import { Carousel } from 'bootstrap'
 import React from 'react'
+import { ItemList } from '../ILContainer/ItemList'
+
+
 
 const ShopPage = () => {
   return (
-    <div>ShopPage</div>
+    <>
+     <h1>Tienda</h1>
+      
+    </>
   )
 }
 

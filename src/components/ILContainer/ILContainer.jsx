@@ -3,6 +3,7 @@ import { products } from './products'
 import { listarArray } from './listarArray'
 import { ItemList } from './ItemList'
 import './itemListContainer.css'
+import { Container, Row, Col, Spinner } from 'react-bootstrap'
 
 
 const ILContainer = () => {
@@ -22,16 +23,30 @@ const ILContainer = () => {
     },[])
 
   return (
-    <div className='container d-grid justify-content-around '>
-
-        {
-            loading ? 
-                <div className='cargando'>Cargando lista de Productos...</div>
-                :
-                <ItemList items={items} />
-        }    
-
-    </div>
+    
+    <Container>
+        <Row>
+            <Col>
+                <div className='container d-grid justify-content-center '>
+                    {
+                        loading ? 
+                            <div className='cargando'>
+                            <Spinner animation="border" variant="primary" />
+                            <Spinner animation="border" variant="secondary" />
+                            <Spinner animation="border" variant="success" />
+                            Cargando...
+                            <Spinner animation="border" variant="danger" />
+                            <Spinner animation="border" variant="warning" />
+                            <Spinner animation="border" variant="info" />
+                            </div>
+                        :
+                            <ItemList items={items} />
+                    }    
+                            </div>
+            </Col>
+        </Row>
+    </Container>
+    
   )
 }
 
