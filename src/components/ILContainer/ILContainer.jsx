@@ -3,8 +3,8 @@ import { products } from './products'
 import { listarArray } from './listarArray'
 import  ItemList from './ItemList'
 import './itemListContainer.css'
-import { Container, Row, Col, Spinner } from 'react-bootstrap'
-
+import { Container, Row, Spinner } from 'react-bootstrap'
+import ItemListContainer from '../ItemListContainer/ItemListContainer'
 
 const ILContainer = () => {
     const [items, setItems] = useState([])
@@ -26,8 +26,7 @@ const ILContainer = () => {
     
     <Container>
         <Row>
-            {/* <Col> */}
-                {/* <div className='d-flex justify-content-center '> */}
+            
                     {
                         loading ? 
                             <div className='cargando'>
@@ -43,8 +42,7 @@ const ILContainer = () => {
                             
                         <ItemList items={items}/>
                     }    
-                            {/* </div> */}
-            {/* </Col> */}
+                    {/* <ItemListContainer />         */}
         </Row>
     </Container>
     
