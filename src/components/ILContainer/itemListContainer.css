@@ -4,12 +4,6 @@
     text-align: center;
 }
 
-/* .ilc{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-} */
-
 .item{
     border: 1px solid black;
     width: 300px;
