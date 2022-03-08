@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import { products } from './products'
 import { listarArray } from './listarArray'
-import { ItemList } from './ItemList'
+import  ItemList from './ItemList'
 import './itemListContainer.css'
 import { Container, Row, Col, Spinner } from 'react-bootstrap'
 
@@ -26,8 +26,8 @@ const ILContainer = () => {
     
     <Container>
         <Row>
-            <Col>
-                <div className='container d-grid justify-content-center '>
+            {/* <Col> */}
+                {/* <div className='d-flex justify-content-center '> */}
                     {
                         loading ? 
                             <div className='cargando'>
@@ -40,10 +40,11 @@ const ILContainer = () => {
                             <Spinner animation="border" variant="info" />
                             </div>
                         :
-                            <ItemList items={items} />
+                            
+                        <ItemList items={items}/>
                     }    
-                            </div>
-            </Col>
+                            {/* </div> */}
+            {/* </Col> */}
         </Row>
     </Container>
     
