@@ -8,7 +8,7 @@ const ItemDetail = (producto) => {
         <Container>
             <Row>
                 <Col>
-                    {product.titulo}
+                    {producto.titulo}
                 </Col>
             </Row>
         </Container>

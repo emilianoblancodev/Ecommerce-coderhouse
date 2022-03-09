@@ -1,5 +1,5 @@
 import React from 'react'
-import { Navbar, Nav, Container } from 'react-bootstrap'
+import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap'
 import bootstrap from 'bootstrap'
 import {
     BrowserRouter as Router,
@@ -18,20 +18,24 @@ import carrito from '../../img/carrito2.png'
 const Navigation = () => {
   return (
     <>
-    <BrowserRouter>
+    
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
             <Container>
-                <Navbar.Brand><Nav.Link as={Link} to="/Intro">Mega Sports</Nav.Link></Navbar.Brand>
+                <Navbar.Brand><Nav.Link as={Link} to="/">Mega Sports</Nav.Link></Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
                         <Nav.Link as={Link} to="/AboutMePage">Nosotros</Nav.Link>
                         <Nav.Link as={Link} to="/ContactPage">Contacto</Nav.Link>
                     </Nav>
+                    <NavDropdown title="Categorias" id="basic-nav-dropdown">
+                        <NavDropdown.Item href="#action/3.1">Hombre</NavDropdown.Item>
+                        <NavDropdown.Item href="#action/3.2">Mujer</NavDropdown.Item>
+                        
+                    </NavDropdown>
                     
-                        <Nav.Link as={Link} to="/ShopPage">Tienda</Nav.Link>
-                        <Nav.Link eventKey={3} href="#memes">
-                            
+                        <Nav.Link as={Link} to="/">Tienda</Nav.Link>
+                        <Nav.Link eventKey={3} as={Link} to="/Cart">
                             <img src={carrito} width="45px" heigth="45px"  />
                         </Nav.Link>
                     
@@ -40,13 +44,13 @@ const Navigation = () => {
         </Navbar>
     
         
-            <Routes>
+            {/* <Routes>
                 <Route path="/AboutMePage" element={<AboutMePage />}  />
                 <Route path="/ContactPage" element={<ContactPage />}  />
                 <Route path="/ShopPage" element={<ShopPage />}  />
                 <Route path="/Intro" element={<Intro />}  />
-            </Routes>
-    </BrowserRouter>
+            </Routes> */}
+    
         
         
     </>

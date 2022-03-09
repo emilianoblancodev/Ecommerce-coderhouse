@@ -18,7 +18,7 @@ const Item = ({titulo, descripcion, src, precio, stock}) => {
                 <h6 className='mx-5 my-2'><Badge bg="success">Stock:{stock}</Badge></h6>
                 </div>
                   <div className="d-grid gap-2">
-                    <Button size="lg" variant="warning">Comprar</Button>
+                    <Button size="lg" variant="warning">Detalles del Producto</Button>
                   </div>
             </Card.Body>
         </Card>
