@@ -7,7 +7,7 @@ import Intro from "./components/Intro/Intro.jsx"
 import ILContainer from "./components/ILContainer/ILContainer";
 import ItemDetail from './components/ItemDetail/ItemDetail.jsx'
 import { Item } from "./components/ILContainer/Item";
-import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import {BrowserRouter, Routes, Route, Navigate} from 'react-router-dom'
 import Navigation from "./components/Navigation/Navigation";
 import { products } from "./components/ILContainer/products";
 import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
@@ -22,10 +22,12 @@ function App() {
             <Route path="/AboutMePage" element={<AboutMePage />}  />
             <Route path="/ContactPage" element={<ContactPage />}  />
             <Route path="/Cart" element={<Cart />} />
-            <Route path="/ItemDetailContainer" element={<ItemDetailContainer />} />
-
+            <Route path="/detalle/:detalleId" element={<ItemDetailContainer />} />
+            <Route path="/categoria/hombre/:categoriaId" element={<ILContainer />} />
+            <Route path="/categoria/mujer/:categoriaId" element={<ILContainer />} />
             <Route path="/" element={<ILContainer />} />
-            </Routes>
+            <Route path="/*" element={<Navigate to="/" replace />} />
+          </Routes>
     </div>
     </BrowserRouter>
     
