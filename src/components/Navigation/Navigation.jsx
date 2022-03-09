@@ -28,12 +28,10 @@ const Navigation = () => {
                         <Nav.Link as={Link} to="/AboutMePage">Nosotros</Nav.Link>
                         <Nav.Link as={Link} to="/ContactPage">Contacto</Nav.Link>
                     </Nav>
-                    <NavDropdown title="Categorias" id="basic-nav-dropdown">
-                        <NavDropdown.Item href="#action/3.1">Hombre</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.2">Mujer</NavDropdown.Item>
-                        
-                    </NavDropdown>
                     
+                        <Nav.Link as={Link} to="/categoria/hombre">Hombre</Nav.Link>
+                        <Nav.Link as={Link} to="/categoria/mujer">Mujer</Nav.Link>
+
                         <Nav.Link as={Link} to="/">Tienda</Nav.Link>
                         <Nav.Link eventKey={3} as={Link} to="/Cart">
                             <img src={carrito} width="45px" heigth="45px"  />
