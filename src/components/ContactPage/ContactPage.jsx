@@ -1,19 +1,19 @@
 import React from 'react'
 import {Form, Button, Container, Row, Col} from 'react-bootstrap'
+import pelota from '../../img/pelota.jpg'
 
 const ContactPage = () => {
   return (
     <>
-      <h1></h1>
-    <Container >
+      <h1 className="text-center my-3 mb-5">Consultas</h1>
+    <Container>
       <Row>
         <Col>
-            <Form>
-            
+            <Form className="w-50">
             <Form.Group className="mb-3 mt-5" controlId="formBasicText">
               <Form.Label>Nombre Completo </Form.Label>
               <Form.Control placeholder="Ingresa tu nombre completo" />
-            
+              <br/>
               <Form.Label>Email </Form.Label>
               <Form.Control type="email" placeholder="Ingresa tu email aquí" />
             </Form.Group>
@@ -31,6 +31,7 @@ const ContactPage = () => {
             </Button>
           </Form>
         </Col>
+        
       </Row>
       
     </Container>
