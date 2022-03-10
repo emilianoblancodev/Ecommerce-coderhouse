@@ -1,14 +1,16 @@
 import React from 'react'
 import './itemListContainer.css'
-import {Card, Badge, Button} from 'react-bootstrap'
+import {Card, Badge, Button, Container} from 'react-bootstrap'
 import ItemList  from './ItemList'
+import ILContainer from './ILContainer'
 import top from '../../img/top.png'
+import {Link} from 'react-router-dom'
 
-
-const Item = ({titulo, descripcion, src, precio, stock}) => {
+const Item = ({id, titulo, descripcion, src, precio,categoria, stock}) => {
   return (
     <>
         <Card style={{ width: '20rem', margin:'20px', text: 'center' }}>
+          
           <Card.Img variant="top" src={src} />
             <Card.Body>
               <Card.Title className='text-center'>{titulo}</Card.Title>
@@ -18,9 +20,13 @@ const Item = ({titulo, descripcion, src, precio, stock}) => {
                 <h6 className='mx-5 my-2'><Badge bg="success">Stock:{stock}</Badge></h6>
                 </div>
                   <div className="d-grid gap-2">
-                    <Button size="lg" variant="warning">Detalles del Producto</Button>
+                    <Link to={`detalle/${id.id}`}>
+                      <Button size="lg" variant="warning">Detalles del Producto</Button>
+                    </Link>
+                    
                   </div>
             </Card.Body>
+            
         </Card>
     </>
     
