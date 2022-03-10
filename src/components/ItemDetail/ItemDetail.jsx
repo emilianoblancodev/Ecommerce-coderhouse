@@ -9,19 +9,18 @@ const ItemDetail = ({producto}) => {
   return (
       
     <div>
-      <h1>Estas en ItemDetail</h1>
+      <h1 className="text-center mb-5">Detalle del producto</h1>
         <Container>
             <Row>
                 <Col>
-                  <h2>Aca va la imagen del producto que debe ser leida del array "products"</h2>
-                    {producto.titulo}
+                    {producto.imagen}
                 </Col>
                 <Col>
-                    <h2>Aca va la descripcion del producto que debe ser leida del array "products"</h2>
+                    <h2>{producto.descripcion}</h2>
                     <hr/>
                     <ItemCount />
                     
-                    {producto.descripcion}
+
                 </Col>
             </Row>
         </Container>

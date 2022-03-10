@@ -93,7 +93,7 @@ export const products = [{
     id: "10",
     titulo: "Zapatilla Puma",
     imagen: '../../img/zapatilla_puma.png',
-    descripcion: "Zapatilla Puma de color gris de hombre con suela de goma estilo clasico y empeine de cuero textil especial urban",
+    descripcion: "Zapatilla Puma de color gris de hombre con suela de goma estilo clasico y empeine de cuero textil especial urban.",
     genero: "mujer",
     precio: 16500,
     stock: 2
@@ -102,7 +102,7 @@ export const products = [{
     id: "11",
     titulo: "Calzas Nike",
     imagen: '../../img/calzas.png',
-    descripcion: "Calzas Nike largas de lycra con inscripcion de la marca en la pierna",
+    descripcion: "Calzas Nike largas de lycra con inscripcion de la marca en la pierna.",
     genero: "mujer",
     precio: 11500,
     stock: 3
