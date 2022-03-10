@@ -17,8 +17,8 @@ const ItemDetailContainer = () => {
     },[])
   return (
     <>
-        <ItemDetail producto={producto} />
-        <ItemCount />
+        <ItemDetail producto={detalleId} />
+        
     </>
   )
 }
