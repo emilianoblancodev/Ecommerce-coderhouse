@@ -1,6 +1,18 @@
 .footer {
     height:15rem;
-    background-color: black;
+    background-color:black;
     color: white;
     
+}
+
+.redes img:hover{
+    transform: scale(1.2);
+    
+}
+.redes img{
+    height:70px;
+    width:70px;
+    margin-right: 40px;
+    margin-top: 20px;
+    border-radius: 10px;
 }
