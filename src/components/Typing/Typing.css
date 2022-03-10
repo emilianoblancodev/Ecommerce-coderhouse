@@ -1,5 +1,38 @@
 .typing{
-    background-color: black;
-    color:white;
-    margin-top: 10px;
+    background-color: white;
+    font-size: 3rem;
+    color:black;
+    height:10rem;
+    width:100vw;
+}
+
+
+/* Efecto escritura */
+
+#mensaje{
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 5rem;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 18ch;
+    animation: typing 3s steps(20), blink .5s infinite step-end alternate;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 3rem;
+}
+
+@keyframes typing {
+    from {width: 0}
+}
+
+@keyframes blink {
+    50% {border-color: transparent}
+}
+
+#ip{
+    text-align: center;
+    /* margin-left: 10rem; */
+    margin-top: 3rem;
+    font-size:medium;
 }

@@ -7,15 +7,19 @@ import {Container, Row, Col} from 'react-bootstrap'
 
 const ItemList = ({items}) => {
   return (
+    <>
+    <Typing />
     <Container>
       <Row>
-        <Typing />
+        
           {
                 items.map((item) => <Item {...item} key={item.id} /> )
           }
         
       </Row>
     </Container>
+    </>
+    
     
   )
 }
