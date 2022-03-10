@@ -6,6 +6,7 @@ import twitter from '../../img/twitter.png'
 import youtube from '../../img/youtube.png'
 import instagram from '../../img/instagram.png'
 import whatsapp from '../../img/whatsapp.png'
+import react from '../../img/react.gif'
 
 
 
@@ -32,6 +33,9 @@ const Footer = () => {
                 </div>
                 
                 </Col>
+            </Row>
+            <Row className="text-center mt-5">
+                <h6>Hecho en <img src={react} width='30px'/> </h6>
             </Row>
             
         </Container>
