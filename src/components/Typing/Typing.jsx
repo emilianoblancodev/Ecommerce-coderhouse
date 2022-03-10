@@ -9,7 +9,6 @@ const Typing = () => {
       <Row>
         <h1 id="mensaje">Tu tienda de deportes</h1>
       </Row>
-      
     </Container>
     </>
     

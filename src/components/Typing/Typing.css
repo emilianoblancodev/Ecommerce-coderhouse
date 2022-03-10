@@ -10,6 +10,7 @@
 /* Efecto escritura */
 
 #mensaje{
+    color:darkgreen;
     display: block;
     font-family: 'Roboto', sans-serif;
     font-size: 4rem;
@@ -30,9 +31,3 @@
     50% {border-color: transparent}
 }
 
-#ip{
-    text-align: center;
-    /* margin-left: 10rem; */
-    margin-top: 3rem;
-    font-size:medium;
-}
