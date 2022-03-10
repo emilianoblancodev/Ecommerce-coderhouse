@@ -33,7 +33,7 @@ const Item = ({id, titulo, descripcion, imagen, precio, genero, stock}) => {
           
                 </div>
                   <div className="d-grid gap-2">
-                    <Link to={`detalle/${id.id}`}>
+                    <Link to={`detalle/${id}`}>
                       <Button size="lg" variant="warning">Detalles del Producto</Button>
                     </Link>
                   </div>

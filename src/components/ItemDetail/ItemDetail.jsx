@@ -4,7 +4,7 @@ import ItemDetailContainer from '../ItemDetailContainer/ItemDetailContainer'
 import ItemCount from '../ItemCount/ItemCount'
 
 
-const ItemDetail = (producto) => {
+const ItemDetail = ({producto}) => {
   
   return (
       

@@ -1,6 +1,7 @@
 import React from 'react'
 import {Form, Button, Container, Row, Col} from 'react-bootstrap'
 import pelota from '../../img/pelota.jpg'
+import './ContactPage.css'
 
 const ContactPage = () => {
   return (
@@ -9,7 +10,7 @@ const ContactPage = () => {
     <Container>
       <Row>
         <Col>
-            <Form className="w-50">
+            <Form>
             <Form.Group className="mb-3 mt-5" controlId="formBasicText">
               <Form.Label>Nombre Completo </Form.Label>
               <Form.Control placeholder="Ingresa tu nombre completo" />
@@ -31,7 +32,8 @@ const ContactPage = () => {
             </Button>
           </Form>
         </Col>
-        
+        <Col>
+        </Col>
       </Row>
       
     </Container>
