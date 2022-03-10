@@ -13,7 +13,7 @@ import AboutMePage from '../AboutMePage/AboutMePage';
 import ContactPage from '../ContactPage/ContactPage';
 import ShopPage from '../ShopPage/ShopPage';
 import Intro from '../Intro/Intro'
-import carrito from '../../img/carrito2.png'
+import carrito from '../../img/cart_white_24dp.png'
 import './Navigation.css'
 
 const Navigation = () => {
