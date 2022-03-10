@@ -1,6 +1,7 @@
 import bootstrap from "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import AboutMePage from "./components/AboutMePage/AboutMePage";
 import ContactPage from "./components/ContactPage/ContactPage";
+import Footer from './components/Footer/Footer.jsx'
 import Cart from './components/Cart/Cart.jsx'
 import ShopPage from "./components/ShopPage/ShopPage.jsx"
 import Intro from "./components/Intro/Intro.jsx"
@@ -18,6 +19,7 @@ function App() {
     <BrowserRouter>
     <div className="App">
         <Navigation />
+        
         <Routes>
             <Route path="/AboutMePage" element={<AboutMePage />}  />
             <Route path="/ContactPage" element={<ContactPage />}  />
@@ -28,6 +30,7 @@ function App() {
             <Route path="/" element={<ILContainer />} />
             <Route path="/*" element={<Navigate to="/" replace />} />
           </Routes>
+          <Footer />
     </div>
     </BrowserRouter>
     
