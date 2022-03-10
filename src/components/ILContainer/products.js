@@ -3,7 +3,7 @@ export const products = [{
     titulo: "Top Nike",
     src: '../../img/top.png',
     descripcion: "Top de color rosa intenso de licra especial para hacer running",
-    categoria: "mujer",
+    genero: "mujer",
     precio: 3500,
     stock: 3
 },
@@ -12,7 +12,7 @@ export const products = [{
     titulo: "Mochila Adidas",
     src: '../../img/mochila.png',
     descripcion: "Mochila Adidas de color gris plomo, impermeable con bolsillo de seguridad antirrobo ",
-    categoria: "hombre",
+    genero: "hombre",
     precio: 6000,
     stock: 12
 },
@@ -21,7 +21,7 @@ export const products = [{
     titulo: "Remera Adidas",
     src: '../../img/remera_adidas.png',
     descripcion: "Remera de hombre Adidas, de lycra transpirable especial para running",
-    categoria: "hombre",
+    genero: "hombre",
     precio: 3100,
     stock: 8
 },
@@ -30,7 +30,7 @@ export const products = [{
     titulo: "Gorro Nike",
     src: '../../img/gorro.png',
     descripcion: "La gorra Nike Tech Swoosh para mujer cuenta con 100% poliéster Dri-FIT ripstop construcción. Esta gorra ligera y transpirable viene con un cierre trasero sin enganches que garantiza el ajuste perfecto y la comodidad total.",
-    categoria: "mujer",
+    genero: "mujer",
     precio: 2500,
     stock: 4
 },
@@ -39,7 +39,7 @@ export const products = [{
     titulo: "Pantalón Adidas",
     src: '../../img/pantalon.png',
     descripcion: "Pantalón de hombre Adidas de color azul chupinado con cierre bajo",
-    categoria: "hombre",
+    genero: "hombre",
     precio: 5200,
     stock: 5
 },
@@ -48,7 +48,7 @@ export const products = [{
     titulo: "Short Nike",
     src: '../../img/short.png',
     descripcion: "Short de mujer de color rosa, transpirable",
-    categoria: "mujer",
+    genero: "mujer",
     precio: 3900,
     stock: 4
 },
@@ -57,7 +57,7 @@ export const products = [{
     titulo: "Campera Nike",
     src: '../../img/campera.png',
     descripcion: "Campera de hombre Nike con friza interior, de color negro con capucha y cierre ultra-resistente.",
-    categoria: "hombre",
+    genero: "hombre",
     precio: 8100,
     stock: 3
 },
@@ -66,7 +66,7 @@ export const products = [{
     titulo: "Zapatilla Nike",
     src: '../../img/zapatilla_nike.png',
     descripcion: "Zapatilla de hombre modelo Renew 100% sintetico, de color blanco con suela ultra blanda especial para running. La malla de la parte superior es transpirable lo que nos brinda mayor confort.",
-    categoria: "hombre",
+    genero: "hombre",
     precio: 19500,
     stock: 3
 },
@@ -75,7 +75,7 @@ export const products = [{
     titulo: "Zapatilla Nike",
     src: '../../img/nike_airmax.png',
     descripcion: "Zapatilla Nike modelo AIR-MAX de hombre, de color negro y suela especial de color blanco con capsula de aire para un mayor confort.",
-    categoria: "hombre",
+    genero: "hombre",
     precio: 23800,
     stock: 2
     
@@ -85,7 +85,7 @@ export const products = [{
     titulo: "Remera DPS",
     src: '../../img/remera.png',
     descripcion: "Remera Running de hombre de color azul transpirable",
-    categoria: "hombre",
+    genero: "hombre",
     precio: 3500,
     stock: 3
 },
@@ -94,7 +94,7 @@ export const products = [{
     titulo: "Zapatilla Puma",
     src: '../../img/zapatilla_puma.png',
     descripcion: "Zapatilla Puma de color gris de hombre con suela de goma estilo clasico y empeine de cuero textil especial urban",
-    categoria: "mujer",
+    genero: "mujer",
     precio: 16500,
     stock: 2
 },
@@ -103,7 +103,7 @@ export const products = [{
     titulo: "Calzas Nike",
     src: '../../img/calzas.png',
     descripcion: "Calzas Nike largas de lycra con inscripcion de la marca en la pierna",
-    categoria: "mujer",
+    genero: "mujer",
     precio: 11500,
     stock: 3
 },    
