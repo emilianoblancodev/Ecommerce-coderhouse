@@ -6,7 +6,7 @@ export const getfetch = new Promise((resolve, reject)=>{
         setTimeout(()=>{
             resolve(products)
         }, 2000);
-    }else{
+    } else {
         reject ("400 not found")
     }
 })
