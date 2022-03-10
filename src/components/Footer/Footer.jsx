@@ -7,10 +7,10 @@ const Footer = () => {
     <>
         <Container fluid className="footer">
             <Row>
-                <Col>
+                <Col className="text-center">
                 <h1>footer</h1>
                 </Col>
-                <Col>
+                <Col className="text-center">
                 <h1>footer</h1>
                 </Col>
             </Row>
