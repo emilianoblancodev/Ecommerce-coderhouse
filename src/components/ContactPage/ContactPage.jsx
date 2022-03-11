@@ -1,6 +1,6 @@
 import React from 'react'
 import {Form, Button, Container, Row, Col} from 'react-bootstrap'
-import pelota from '../../img/pelota.jpg'
+import pelota from '../../img/Mujer_playa_yoga.jpg'
 import './ContactPage.css'
 
 const ContactPage = () => {
@@ -33,6 +33,7 @@ const ContactPage = () => {
           </Form>
         </Col>
         <Col>
+          <img id='image' src={pelota} />
         </Col>
       </Row>
       
