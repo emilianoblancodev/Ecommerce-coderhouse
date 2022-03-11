@@ -26,13 +26,13 @@ const AboutMePage = () => {
         <br /> <br />
         <span>Nuestros Valores:</span> 
         <ul>
-          <li>Cliente siempre primero</li>
-          <li>Compromiso</li>
-          <li>Pasión</li>
-          <li>Hacer lo correcto</li>
-          <li>Más que un equipo</li>
-          <li>Innovación</li>
-          <li>Comunicación</li>
+          <li>Cliente siempre primero.</li>
+          <li>Compromiso.</li>
+          <li>Pasión.</li>
+          <li>Hacer lo correcto.</li>
+          <li>Más que un equipo.</li>
+          <li>Innovación.</li>
+          <li>Comunicación.</li>
         </ul>
       </p>
       </div>
