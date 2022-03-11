@@ -28,8 +28,6 @@ const Navigation = () => {
                     <Nav className="me-auto navbar">
                         <Nav.Link as={Link} to="/AboutMePage">Nosotros</Nav.Link>
                         <Nav.Link as={Link} to="/ContactPage">Contacto</Nav.Link>
-                    {/* </Nav> */}
-                    
                         <Nav.Link as={Link} to="/categoria/hombre">Hombre</Nav.Link>
                         <Nav.Link as={Link} to="/categoria/mujer">Mujer</Nav.Link>
                     </Nav>
