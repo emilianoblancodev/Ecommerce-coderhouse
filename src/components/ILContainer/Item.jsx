@@ -3,21 +3,9 @@ import './itemListContainer.css'
 import {Card, Badge, Button, Container} from 'react-bootstrap'
 import ItemList  from './ItemList'
 import ILContainer from './ILContainer'
-
 import {Link} from 'react-router-dom'
 import { products } from './products.js'
-import top from '../../img/top.png'
-import mochila from '../../img/mochila.png'
-import remera_adidas from '../../img/remera_adidas.png'
-import gorro from '../../img/gorro.png'
-import pantalon from '../../img/pantalon.png'
-import short from '../../img/short.png'
-import campera from '../../img/campera.png'
-import zapatilla_nike from '../../img/zapatilla_nike.png'
-import nike_airmax from '../../img/nike_airmax.png'
-import remera from '../../img/remera.png'
-import zapatilla_puma from '../../img/zapatilla_puma.png'
-import calzas from '../../img/calzas.png'
+
 
 const Item = ({id, titulo, descripcion, imagen, precio, genero, stock}) => {
   return (
@@ -33,7 +21,7 @@ const Item = ({id, titulo, descripcion, imagen, precio, genero, stock}) => {
           
                 </div>
                   <div className="d-grid gap-2">
-                    <Link to={`detalle/${id}`}>
+                    <Link to={`/detalle/${id}`}>
                       <Button size="lg" variant="warning">Detalles del Producto</Button>
                     </Link>
                   </div>

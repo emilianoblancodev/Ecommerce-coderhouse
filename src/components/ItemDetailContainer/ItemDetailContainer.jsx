@@ -15,6 +15,7 @@ const ItemDetailContainer = () => {
         getfetch
             .then(resp => setProducto(resp.find(products => products.id === detalleId)))
     },[])
+    
   return (
     <>
         <ItemDetail producto={producto} />

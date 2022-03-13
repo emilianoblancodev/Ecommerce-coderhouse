@@ -7,10 +7,10 @@ const ContactPage = () => {
   return (
     <>
       <h1 className="text-center my-3 mb-5">Consultas</h1>
-    <Container>
+    <Container fluid>
       <Row>
         <Col>
-            <Form>
+            <Form className="mx-3">
             <Form.Group className="mb-3 mt-5" controlId="formBasicText">
               <Form.Label>Nombre Completo </Form.Label>
               <Form.Control placeholder="Ingresa tu nombre completo" />
