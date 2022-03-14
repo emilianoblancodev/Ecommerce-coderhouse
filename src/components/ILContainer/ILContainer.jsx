@@ -12,8 +12,8 @@ const ILContainer = () => {
     const [items, setItems] = useState([])
     const [loading, setLoading] = useState(false)
     const {categoriaId} = useParams
+    
     useEffect(()=>{
-
         if(categoriaId){
             setLoading(true)
             listarArray(products)
@@ -22,7 +22,7 @@ const ILContainer = () => {
             })
             .catch((err)=>console.log(err))
             .finally(()=>{
-                        setLoading(false)
+                setLoading(false)
             })
         }else{
             setLoading(true)

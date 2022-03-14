@@ -13,7 +13,7 @@ const ItemDetail = ({producto}) => {
         <Container>
             <Row>
                 <Col>
-                    {producto.imagen}
+                    <img src={producto.imagen} alt={producto.titulo} />
                 </Col>
                 <Col>
                     <h2>{producto.descripcion}</h2>
