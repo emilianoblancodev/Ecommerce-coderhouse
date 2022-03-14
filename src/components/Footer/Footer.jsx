@@ -1,12 +1,12 @@
 import React from 'react'
 import {Container, Row, Col} from 'react-bootstrap'
 import './Footer.css'
-import facebook from '../../img/facebook.png'
-import twitter from '../../img/twitter.png'
-import youtube from '../../img/youtube.png'
-import instagram from '../../img/instagram.png'
-import whatsapp from '../../img/whatsapp.png'
-import react from '../../img/react.gif'
+import facebook from '../../assets/img/facebook.png'
+import twitter from '../../assets/img/twitter.png'
+import youtube from '../../assets/img/youtube.png'
+import instagram from '../../assets/img/instagram.png'
+import whatsapp from '../../assets/img/whatsapp.png'
+import react from '../../assets/img/react.gif'
 
 
 

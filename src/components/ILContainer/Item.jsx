@@ -29,17 +29,13 @@ const Item = ({id, titulo, descripcion, imagen, precio, genero, stock}) => {
                     <h6 className='mx-5 mt-2 d-inline-flex'><Badge bg="success">Genero: {genero}</Badge></h6>
                   </div>
             </Card.Body>
-        </Card>
+        </Card> 
+        
+
     </>
     
 
-        // <div className='container item'>
-        //     <div className='titulo'>{titulo}</div>  
-        //     <img src={imagen} alt={titulo} />
-        //     <div className='descripcion'>{descripcion}</div>  
-        //     <button>Detalles</button>
-        //     <div className='precio'>${precio}</div>
-        // </div>
+        
       
         
   )

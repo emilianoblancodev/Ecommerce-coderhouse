@@ -1,6 +1,6 @@
 import React from 'react'
 import {Form, Button, Container, Row, Col} from 'react-bootstrap'
-import pelota from '../../img/Mujer_playa_yoga.jpg'
+import pelota from '../../assets/img/Mujer_playa_yoga.jpg'
 import './ContactPage.css'
 
 const ContactPage = () => {
