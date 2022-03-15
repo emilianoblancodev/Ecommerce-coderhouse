@@ -4,13 +4,11 @@ import ContactPage from "./components/ContactPage/ContactPage";
 import Footer from './components/Footer/Footer.jsx'
 import Cart from './components/Cart/Cart.jsx'
 import ShopPage from "./components/ShopPage/ShopPage.jsx"
-import Intro from "./components/Intro/Intro.jsx"
 import ILContainer from "./components/ILContainer/ILContainer";
 import ItemDetail from './components/ItemDetail/ItemDetail.jsx'
 import { Item } from "./components/ILContainer/Item";
 import {BrowserRouter, Routes, Route, Navigate} from 'react-router-dom'
 import Navigation from "./components/Navigation/Navigation";
-import { products } from "./components/ILContainer/products";
 import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
 
 

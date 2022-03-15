@@ -1,8 +1,9 @@
 import React from 'react'
+import './Cart.css'
 
 const Cart = () => {
   return (
-    <h1>Cart</h1>
+    <h1>Aqui va el carrito de compras</h1>
   )
 }
 

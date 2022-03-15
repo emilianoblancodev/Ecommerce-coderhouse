@@ -9,10 +9,6 @@ import {
     Routes,
     BrowserRouter
   } from "react-router-dom";
-import AboutMePage from '../AboutMePage/AboutMePage';
-import ContactPage from '../ContactPage/ContactPage';
-import ShopPage from '../ShopPage/ShopPage';
-import Intro from '../Intro/Intro'
 import carrito from '../../assets/img/cart_white_24dp.png'
 import './Navigation.css'
 
@@ -40,16 +36,6 @@ const Navigation = () => {
                 </Navbar.Collapse>
             </Container>
         </Navbar>
-    
-        
-            {/* <Routes>
-                <Route path="/AboutMePage" element={<AboutMePage />}  />
-                <Route path="/ContactPage" element={<ContactPage />}  />
-                <Route path="/ShopPage" element={<ShopPage />}  />
-                <Route path="/Intro" element={<Intro />}  />
-            </Routes> */}
-    
-        
         
     </>
 
