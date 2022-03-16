@@ -10,27 +10,34 @@ import { Item } from "./components/ILContainer/Item";
 import {BrowserRouter, Routes, Route, Navigate} from 'react-router-dom'
 import Navigation from "./components/Navigation/Navigation";
 import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
+import CartContextProvider from './context/CartContext.jsx'
+
 
 
 function App() {
   return (
-    <BrowserRouter>
-    <div className="App">
-        <Navigation />
-        
-        <Routes>
-            <Route path="/AboutMePage" element={<AboutMePage />}  />
-            <Route path="/ContactPage" element={<ContactPage />}  />
-            <Route path="/Cart" element={<Cart />} />
-            <Route path="/detalle/:detalleId" element={<ItemDetailContainer />} />
-            <Route path="/categoria/hombre/:categoriaId" element={<ILContainer />} />
-            <Route path="/categoria/mujer/:categoriaId" element={<ILContainer />} />
-            <Route path="/" element={<ILContainer />} />
-            <Route path="/*" element={<Navigate to="/" replace />} />
-          </Routes>
-          <Footer />
-    </div>
-    </BrowserRouter>
+
+    <CartContextProvider>
+      <BrowserRouter>
+      <div className="App">
+          <Navigation />
+          
+          <Routes>
+              <Route path="/AboutMePage" element={<AboutMePage />}  />
+              <Route path="/ContactPage" element={<ContactPage />}  />
+              <Route path="/Cart" element={<Cart />} />
+              <Route path="/detalle/:detalleId" element={<ItemDetailContainer />} />
+              {/* <Route path="/categoria/hombre/:categoriaId" element={<ILContainer />} />
+              <Route path="/categoria/mujer/:categoriaId" element={<ILContainer />} /> */}
+              <Route path="/" element={<ILContainer />} />
+              <Route path="/*" element={<Navigate to="/" replace />} />
+            </Routes>
+            <Footer />
+      </div>
+      </BrowserRouter>
+    </CartContextProvider>
+      
+    
     
   );
 }

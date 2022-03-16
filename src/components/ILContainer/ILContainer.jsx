@@ -11,14 +11,14 @@ import Carrousel from '../Carrousel/Carrousel'
 const ILContainer = () => {
     const [items, setItems] = useState([])
     const [loading, setLoading] = useState(false)
-    const {categoriaId} = useParams
+    const {categoriaId} = useParams()
     
     useEffect(()=>{
         if(categoriaId){
             setLoading(true)
             listarArray(products)
             .then((res)=>{
-                setItems(res.filter(items => items.categoria === categoriaId))
+                setItems(res.filter(items => items.genero === categoriaId))
             })
             .catch((err)=>console.log(err))
             .finally(()=>{

@@ -1,10 +1,20 @@
-import React from 'react'
+import React, { useContext, useState } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import ItemDetailContainer from '../ItemDetailContainer/ItemDetailContainer'
 import ItemCount from '../ItemCount/ItemCount'
+import { useCartContext } from '../../context/CartContext'
 
 
 const ItemDetail = ({producto}) => {
+  const [count, setCount] = useState(null)
+ 
+  const {AgregarCart} = useCartContext()
+
+  const onAdd = cant => {
+    console.log(cant)
+    setCount(cant)
+    AgregarCart({...producto, cantidad: cant})
+  }
   
   return (
       
