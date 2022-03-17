@@ -8,7 +8,8 @@ const Cart = () => {
   
   return (
     <>
-      {cartList.map(item => <li>{item.imagen},{item.titulo},{item.precio}</li>)}
+    <h2>Carrito</h2>
+      {cartList.map(item => <li>{item.imagen}{item.titulo}{item.precio}</li>)}
       <button onClick={clearCart}>Vaciar Carrito</button>
     </>
     
