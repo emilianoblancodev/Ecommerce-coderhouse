@@ -3,6 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap'
 import ItemDetailContainer from '../ItemDetailContainer/ItemDetailContainer'
 import ItemCount from '../ItemCount/ItemCount'
 import { useCartContext } from '../../context/CartContext'
+import Intercambiabilidad from '../Intercambiabilidad/Intercambiabilidad'
 
 
 const ItemDetail = ({producto}) => {
@@ -29,8 +30,8 @@ const ItemDetail = ({producto}) => {
                     <h2>{producto.descripcion}</h2>
                     <hr/>
                     
-                    <ItemCount />
-                    
+                    <ItemCount initial={1} stock={producto.stock} onAdd={onAdd}/>
+                    {/* <Intercambiabilidad /> */}
 
                 </Col>
             </Row>
