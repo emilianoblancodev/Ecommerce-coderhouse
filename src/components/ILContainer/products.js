@@ -105,7 +105,7 @@ export const products = [{
     descripcion: "Calzas Nike largas de lycra ultrarresistente con inscripción de la marca en la pierna.",
     genero: "mujer",
     precio: 11500,
-    stock: 3
+    stock: 8
 },    
 ]
 
