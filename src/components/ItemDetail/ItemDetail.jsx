@@ -28,6 +28,7 @@ const ItemDetail = ({producto}) => {
                 <Col>
                     <h2>{producto.descripcion}</h2>
                     <hr/>
+                    
                     <ItemCount />
                     
 

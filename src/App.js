@@ -27,8 +27,8 @@ function App() {
               <Route path="/ContactPage" element={<ContactPage />}  />
               <Route path="/Cart" element={<Cart />} />
               <Route path="/detalle/:detalleId" element={<ItemDetailContainer />} />
-              {/* <Route path="/categoria/hombre/:categoriaId" element={<ILContainer />} />
-              <Route path="/categoria/mujer/:categoriaId" element={<ILContainer />} /> */}
+              <Route path="/categoria/:categoriaId" element={<ILContainer />} />
+              <Route path="/categoria/:categoriaId" element={<ILContainer />} />
               <Route path="/" element={<ILContainer />} />
               <Route path="/*" element={<Navigate to="/" replace />} />
             </Routes>
