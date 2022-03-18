@@ -8,7 +8,7 @@ import Intercambiabilidad from '../Intercambiabilidad/Intercambiabilidad'
 
 const ItemDetail = ({producto}) => {
   const [count, setCount] = useState(null)
- 
+  
   const {AgregarCart} = useCartContext()
 
   const onAdd = cant => {

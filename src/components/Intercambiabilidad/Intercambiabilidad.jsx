@@ -2,11 +2,11 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 
-const InputCount= ()=> {
+const InputCount= (onAdd)=> {
 
     return (
         <Link to='/cart' >
-            <button className="btn btn-outline-primary" onClick={()=>console.log('ir a cart') } >Ir al Carrito</button>
+            <button className="btn btn-outline-primary" onClick={onAdd} >Ir al Carrito</button>
         </Link>
     )
 }
@@ -14,7 +14,7 @@ const InputCount= ()=> {
 
 
 const ButtonCount= ({handleInter})=> {
-    return <button className="btn btn-outline-success" onClick={handleInter}>Agregar Al carrito</button>
+    return <button className="btn btn-outline-success" onClick={handleInter}>Agregar al carrito</button>
 
 }
 
@@ -22,21 +22,21 @@ const Intercambiabilidad = () => {
 
     const [inputType, setInputType ] = useState('button')
 
-    const handleInter=()=>{
+    const handleInter= ()=> {
         setInputType('input')
     }
     
     return (
         <div>
-            <h2>Item Description</h2>
             
             {
-                inputType === 'button' ? 
+                inputType === 'button' 
+                ? 
                     <ButtonCount handleInter={handleInter} />
                 : 
                     <InputCount />
             }
-             {/* <Count onConfirm={addToCart} maxQuantity={itemMax} />  */}
+              
         </div>
     )
 }
