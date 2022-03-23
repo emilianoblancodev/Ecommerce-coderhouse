@@ -28,11 +28,9 @@ const Navigation = () => {
                         <Nav.Link as={Link} to="/categoria/mujer">Mujer</Nav.Link>
                     </Nav>
                         <Nav.Link className="brand" as={Link} to="/">Tienda</Nav.Link>
-                         
                         <Nav.Link eventKey={2} as={Link} to="/Cart" className="brand">
                             <img src={carrito} width="45px" heigth="45px"  />
                         </Nav.Link>
-                   
                 </Navbar.Collapse>
             </Container>
         </Navbar>
