@@ -9,7 +9,6 @@ const Cart = () => {
   return (
     <>
     <h2>Carrito</h2>
-      {/* {cartList.map(item => <li>{item.imagen}{item.titulo}{item.precio}</li>)} */}
 
       {cartList.map(item => <table>
                               <tr>
